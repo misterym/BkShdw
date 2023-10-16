@@ -207,7 +207,7 @@
     font-weight: 900;
 }
 .tbos-reg-apcan > div > strong {
-    background: var(--accent);
+    background: var(--accent-foro);
     font-size: var(--fntsize-mini);
     letter-spacing: .5px;
     color: #fff;
@@ -225,7 +225,7 @@
     gap: 5px;
 }
 .tbpnt-s {
-    background: var(--accent);
+    background: var(--accent-foro);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -307,7 +307,7 @@
     font-size: var(--fntsize-mini);
     font-weight: 700;
     letter-spacing: .5px;
-    color: var(--accent);
+    color: var(--accent-foro);
 }
 .tbost-item > puntos {
     font-size: var(--fntsize-mini);
