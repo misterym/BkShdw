@@ -268,3 +268,6 @@
 .tbpnt-i {
     padding: 20px 0;
 }
+.tbostab-title i {
+    color: var(--accent-foro);
+}
