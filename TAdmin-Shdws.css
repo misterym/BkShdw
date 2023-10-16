@@ -205,3 +205,13 @@
     color: var(--accent-foro);
     font-weight: 900;
 }
+.tbos-reg-apcan > div > strong {
+    background: var(--accent);
+    font-size: var(--fntsize-mini);
+    letter-spacing: .5px;
+    color: #fff;
+    padding: 4px 5px;
+}
+.tbos-tb-reg-c > br {
+    display: none;
+}
