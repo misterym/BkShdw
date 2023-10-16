@@ -1,4 +1,5 @@
 /* Tablillas administrativas */
+.night .tbos-btablilla-admin{--background-stema:#41414122}
 .tbos-btablilla-admin {
     font-size: calc(var(--fntsize-nrm)*1.1);
     background: var(--background-stema);
