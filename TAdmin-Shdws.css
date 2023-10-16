@@ -24,7 +24,7 @@
     font-size: var(--fntsize-cat);
     text-transform: uppercase;
     font-weight: 600;
-    color: var(--accent-foro-foro);
+    color: var(--accent-foro);
 }
 .tbostab-title > span:before {
     content: "/";
