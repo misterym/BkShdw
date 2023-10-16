@@ -215,3 +215,56 @@
 .tbos-tb-reg-c > br {
     display: none;
 }
+.tbos-sispun {
+    margin: 30px;
+    border: var(--border-opacity);
+    background: var(--bckg);
+    padding: 20px;
+    display: grid;
+    gap: 5px;
+}
+.tbpnt-s {
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: var(--fntsize-mini);
+    letter-spacing: 1px;
+    color: #fff;
+}
+.tbpnt-s {
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: var(--fntsize-mini);
+    letter-spacing: 1px;
+    color: #fff;
+}
+.tbos-sispun > br {
+    display: none;
+}
+.tbpnt {
+    display: grid;
+    grid-template-columns: auto 70px;
+    gap: 5px;
+}
+.tbpnt > * {
+    border: var(--border-opacity);
+    background: var(--background-stema);
+    padding: 5px 10px;
+}
+.tbpnt > puntos {
+    text-align: center;
+    font-weight: 700;
+    font-size: var(--fntsize-mini);
+}
+.tbpnt-i {
+    padding: 20px 0;
+}
