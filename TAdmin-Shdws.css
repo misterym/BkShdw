@@ -272,3 +272,47 @@
 .tbostab-title i {
     color: var(--accent-foro);
 }
+.tbos-tienda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.tbos-tienda > br {
+    display: none;
+}
+.tbost-item {
+    border: var(--border-opacity);
+    background: var(--bckg);
+    flex-grow: .5;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-width: 125px;
+    flex-direction: column;
+}
+.tbost-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    padding: 5px;
+    border: 4px solid var(--background-stema);
+    margin-bottom: 8px;
+}
+.tbost-item > b {
+    text-transform: uppercase;
+    font-size: var(--fntsize-mini);
+    font-weight: 700;
+    letter-spacing: .5px;
+    color: var(--accent);
+}
+.tbost-item > puntos {
+    font-size: var(--fntsize-mini);
+    text-transform: uppercase;
+    font-weight: 600;
+    background: var(--background-stema);
+    padding: 2px 10px;
+}
