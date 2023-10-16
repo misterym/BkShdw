@@ -236,7 +236,7 @@
     color: #fff;
 }
 .tbpnt-s {
-    background: var(--accent);
+    background: var(--accent-foro);
     display: flex;
     align-items: center;
     justify-content: flex-start;
