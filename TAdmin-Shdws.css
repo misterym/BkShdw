@@ -1,0 +1,193 @@
+/* Tablillas administrativas */
+.tbos-btablilla-admin {
+    font-size: calc(var(--fntsize-nrm)*1.1);
+    background: var(--background-stema);
+    width: 700px;
+    margin: 10px auto;
+    border: var(--border-opacity);
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 10px var(--prin-bckg);
+}
+.tbostab-title {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: var(--border-opacity);
+    height: 80px;
+    background: var(--bckg);
+    padding: 10px 40px;
+    box-sizing: border-box;
+}
+.tbostab-title > b {
+    font-family: var(--fnt-title);
+    font-size: var(--fntsize-cat);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--accent-foro);
+}
+.tbostab-title > span:before {
+    content: "/";
+    padding-right: 10px;
+}
+.tbostab-title > span {
+    text-transform: uppercase;
+    font-size: var(--fntsize-mini);
+    letter-spacing: 1px;
+}
+.tbos-btab-info {
+    padding: 35px;
+    background: var(--background-stema);
+    border-bottom: var(--border-tab);
+}
+.tbostab-content {
+    font-size: calc(var(--fntsize-nrm)*1.06);
+    padding: 30px;
+    margin: 30px;
+    background: rgb(var(--background-1));
+    border: var(--border-tab);
+}
+.tbos-btab-sb {
+    font-size: var(--fntsize-sub);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-left: 5px solid var(--accent);
+    padding-left: 30px;
+    margin: 25px 0;
+    font-style: italic;
+}
+.tbos-btab-sb > span {
+    font-size: var(--fntsize-nrm);
+    background: var(--accent);
+    color: #fff;
+    padding: 2px 5px;
+    position: relative;
+    top: -2px;
+}
+.tbos-btab-conteo > span {
+    font-weight: 900;
+    color: var(--accent);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tbos-btab-conteo > span:after {
+    content: "\f138";
+    padding-left: 10px;
+    font-family: 'Font Awesome 5 Pro';
+    font-size: var(--fntsize-mini);
+}
+.tbostab-subtitle {
+    overflow: hidden;
+    border-top: var(--border-tab);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgb(Var(--background-1));
+    height: 40px;
+    gap: 15px;
+}
+.tbostab-subtitle > i {
+    font-size: var(--fntsize-cat);
+    color: var(--accent);
+    padding-left: 20px;
+}
+.tbostab-subtitle > p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: var(--fntsize-mini);
+    letter-spacing: 1px;
+}
+/* registros */
+.tbos-tb-reg-c {
+    display: flex;
+    gap: 10px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+.tbosreg-col {
+    flex-grow: .5;
+    width: 200px;
+    border: var(--border-tab);
+    padding: 20px;
+    background: rgb(var(--background-1));
+}
+.tbosreg-col span {
+    background: var(--accent);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    font-size: var(--fntsize-mini);
+    display: flex;
+    width: fit-content;
+    font-weight: 900;
+}
+.tbosreg-col i {
+    color: var(--accent);
+    padding-right: 5px;
+    font-size: var(--fntsize-mini);
+}
+.tbosreg-col strong {
+    text-transform: uppercase;
+    color: var(--accent);
+    font-family: var(--fnt-title);
+    font-weight: 900;
+    letter-spacing: .5px;
+}
+.tbosreg-reserva {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.tbosreg-reserva > div {
+    flex-grow: 1;
+    min-width: 274px;
+}
+.tbos-reg-apcan {
+    display: flex;
+    gap: 10px;
+    padding: 0 30px 30px;
+}
+.tbos-reg-apcan > div {
+    border: var(--border-tab);
+    background: rgb(var(--background-1));
+    padding: 20px;
+    max-height: 450px;
+    overflow: auto;
+}
+.tbos-reg-apcan > div > span {
+    font-size: calc(var(--fntsize-mini)*1.03);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .3px;
+}
+.tbos-reg-apcan > div .ocupado {
+    text-decoration-line: line-through;
+}
+.tbos-reg-apcan > div span:before {
+    content: "";
+    text-decoration: none!important;
+    width: 6px;
+    height: 6px;
+    background: green;
+    border-radius: 100%;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px 7px 2px 0;
+}
+.tbos-reg-apcan > div .ocupado:before {
+    background: red;
+}
+.tbos-reg-apcan > div > span strong {
+    color: var(--accent);
+    font-weight: 900;
+}
+.tbos-reg-sagrados {
+    flex-grow: .35;
+}
