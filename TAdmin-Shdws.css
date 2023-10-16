@@ -24,7 +24,7 @@
     font-size: var(--fntsize-cat);
     text-transform: uppercase;
     font-weight: 600;
-    color: var(--accent-foro);
+    color: var(--accent-foro-foro);
 }
 .tbostab-title > span:before {
     content: "/";
@@ -38,28 +38,28 @@
 .tbos-btab-info {
     padding: 35px;
     background: var(--background-stema);
-    border-bottom: var(--border-tab);
+    border-bottom: var(--border-opacity);
 }
 .tbostab-content {
     font-size: calc(var(--fntsize-nrm)*1.06);
     padding: 30px;
     margin: 30px;
     background: rgb(var(--background-1));
-    border: var(--border-tab);
+    border: var(--border-opacity);
 }
 .tbos-btab-sb {
     font-size: var(--fntsize-sub);
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
-    border-left: 5px solid var(--accent);
+    border-left: 5px solid var(--accent-foro);
     padding-left: 30px;
     margin: 25px 0;
     font-style: italic;
 }
 .tbos-btab-sb > span {
     font-size: var(--fntsize-nrm);
-    background: var(--accent);
+    background: var(--accent-foro);
     color: #fff;
     padding: 2px 5px;
     position: relative;
@@ -67,7 +67,7 @@
 }
 .tbos-btab-conteo > span {
     font-weight: 900;
-    color: var(--accent);
+    color: var(--accent-foro);
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -79,7 +79,7 @@
 }
 .tbostab-subtitle {
     overflow: hidden;
-    border-top: var(--border-tab);
+    border-top: var(--border-opacity);
     padding: 10px;
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@
 }
 .tbostab-subtitle > i {
     font-size: var(--fntsize-cat);
-    color: var(--accent);
+    color: var(--accent-foro);
     padding-left: 20px;
 }
 .tbostab-subtitle > p {
@@ -109,12 +109,12 @@
 .tbosreg-col {
     flex-grow: .5;
     width: 200px;
-    border: var(--border-tab);
+    border: var(--border-opacity);
     padding: 20px;
     background: rgb(var(--background-1));
 }
 .tbosreg-col span {
-    background: var(--accent);
+    background: var(--accent-foro);
     color: #fff;
     text-transform: uppercase;
     padding: 2px 10px;
@@ -124,13 +124,13 @@
     font-weight: 900;
 }
 .tbosreg-col i {
-    color: var(--accent);
+    color: var(--accent-foro);
     padding-right: 5px;
     font-size: var(--fntsize-mini);
 }
 .tbosreg-col strong {
     text-transform: uppercase;
-    color: var(--accent);
+    color: var(--accent-foro);
     font-family: var(--fnt-title);
     font-weight: 900;
     letter-spacing: .5px;
@@ -153,7 +153,7 @@
     padding: 0 30px 30px;
 }
 .tbos-reg-apcan > div {
-    border: var(--border-tab);
+    border: var(--border-opacity);
     background: rgb(var(--background-1));
     padding: 20px;
     max-height: 450px;
@@ -185,9 +185,23 @@
     background: red;
 }
 .tbos-reg-apcan > div > span strong {
-    color: var(--accent);
+    color: var(--accent-foro);
     font-weight: 900;
 }
 .tbos-reg-sagrados {
     flex-grow: .35;
+}
+.tbostab-content u {
+    background: var(--accent-foro);
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: calc(var(--fntsize-mini)*1.03);
+    letter-spacing: 1.5px;
+    padding: 2px 5px;
+    margin: 0 2px;
+}
+.tbostab-content strong, .tbostab-content i {
+    color: var(--accent-foro);
+    font-weight: 900;
 }
