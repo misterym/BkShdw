@@ -358,3 +358,4 @@
     border: var(--border-stema);
     box-sizing: border-box;
 }
+ .tbosl-info > texto br{display:block:!important;}
