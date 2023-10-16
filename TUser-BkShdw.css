@@ -300,6 +300,10 @@
     overflow: auto;
     margin-right: -22px;
 }
+.tbosr-personaje > div {
+    display: flex;
+    flex-direction: column;
+}
 .tbos-b-pjs-cd .tbosr-personaje > div {
     min-width: 100px;
     align-items: center;
