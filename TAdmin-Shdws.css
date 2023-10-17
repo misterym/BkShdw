@@ -3,11 +3,13 @@
 .tbos-btablilla-admin {
     font-size: calc(var(--fntsize-nrm)*1.1);
     background: var(--background-stema);
-    width: 700px;
+    max-width: 700px;
     margin: 10px auto;
-    border: var(--border-opacity);
     backdrop-filter: blur(4px);
     box-shadow: 5px 5px 10px var(--prin-bckg);
+    border: 15px solid var(--background-stema);
+    outline: var(--border-opacity);
+    outline-offset: -15px;
 }
 .tbostab-title {
     gap: 20px;
