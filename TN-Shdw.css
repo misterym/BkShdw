@@ -40,12 +40,6 @@ div#carrito {
   z-index:99999!important;
     width: 400px;
 }
-.navbar {
-    display: none!important;
-    height: 0;
-    opacity: 0;
-    padding: 0;
-}
 div#items-carrito > div button {
     border: 0;
     background: var(--accent);
@@ -140,10 +134,11 @@ div#carrito.oculto > *:not(.titulo-carrito) {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     background: var(--bckg);
     padding: 10px 20px;
     border: var(--border-opacity);
+    flex-wrap: wrap;
 }
 #tus-tickets descuento {
     background: var(--background-stema);
