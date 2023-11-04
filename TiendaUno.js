@@ -50,7 +50,7 @@ function mostrarCupones(evento){
       if(descuento.getAttribute('id') == 1){
   	let baseItemPrecio = baseDatos.find((i) => i.nombre == evento.target.getAttribute('lista'));
   	let maximo = parseInt(evento.target.getAttributte('maximo'));
-  	if(baseItemPrecio &lt; maximo){
+  	if(baseItemPrecio <= maximo){
   	  const boton = document.createElement('button');
           boton.textContent = `${descuento.getAttribute('name')}`;
           boton.setAttribute('valor', descuento.getAttribute('valor'));
