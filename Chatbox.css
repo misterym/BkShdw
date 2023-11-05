@@ -1,0 +1,184 @@
+.chatbox div#chatbox_header {
+    border: 1px solid #666;
+    font-size: .8em;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px
+}
+h2.chatbox-title {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    color: #999;
+    letter-spacing: 2px;
+    width: 400px
+}
+
+.chatbox-title,.chatbox-title a.chat-title {
+    font-weight: 600
+}
+
+.chatbox span#nb-users-connected {
+    border: 1px solid #666;
+    padding: 0 10px
+}
+
+ul#chatbox_main_options {
+    color: #888;
+    text-transform: uppercase;
+    font-family: arial;
+    font-size: .95em;
+    letter-spacing: 1px
+}
+
+.chatbox div#tab_selector_cb {
+    border-right-color: #666;
+    border-bottom: 1px solid #666;
+    border-left: 1px solid #666
+}
+
+.chatbox .cb_active_btn {
+    background-color: #111
+}
+
+#cb_switch_members,#cb_switch_channels {
+    padding-top: 4px
+}
+
+#tab_selector_cb svg#cb_switch_members path:last-child,#tab_selector_cb svg#cb_switch_channels path:last-child {
+    fill: #666;
+    transform: scale(.75)
+}
+
+.chatbox .cb_active_btn path:last-child {
+    fill: #999!important
+}
+
+div#chatbox_members {
+    border-color: #666;
+    font-family: arial;
+    padding-top: 8px
+}
+.chatbox span.status-msg {
+    padding-left: 5px
+}
+
+.chatbox h4.channels-title,.chatbox .member-title {
+    background-color: #111;
+    border: 1px solid #666;
+    color: #999;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 12px 0;
+    border-right: 0;
+    border-left: 0
+}
+
+#chatbox_members,#chatbox_channels {
+    border-right: 1px solid #666;
+    border-left: 1px solid #666
+}
+
+div#chatbox_footer {
+    background: #e2e2e2;
+    border: 1px solid #666
+}
+
+div#chatbox_footer label,div#chatbox_footer #divcolor,div#chatbox_footer #divsmilies,div#chatbox_footer #submit_button {
+    border: 1px solid #666;
+    background: #eaeaea;
+    padding: 0 10px;
+    font-family: arial;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 21px;
+    color: #555!important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 0 4px
+}
+
+div#chatbox {
+    color: #555!important;
+    font-family: arial!important;
+    font-size: 11.5px!important
+}
+#chatbox>p {
+    border-bottom: 1px solid #666d!important;
+    padding: 8px 10px;
+    margin-bottom: 0;
+    line-height: 15px;
+    font-weight: 450;
+    color: #777;
+}
+#chatbox .cb-avatar {
+    background: none repeat scroll 0 0 #fff;
+    outline: 1px solid #666!important;
+    float: left;
+    overflow: hidden;
+    height: 30px;
+    margin-right: 15px!important;
+    padding: 1px;
+    vertical-align: middle;
+    width: 30px;
+    padding: 0 5px 10px!important;
+    box-shadow: unset!important;
+    border-bottom-width: 5px!important;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 100%;
+}
+#chatbox .cb-avatar>img {
+    height: unset!important;
+    width: 50px!important
+}
+
+div#chatbox_footer input {
+    border: 1px solid #666;
+    margin-left: 5px;
+    height: 21px;
+    margin-top: 0;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #888
+}
+#chatbox .user {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+    background: #111;
+    margin-left: 20px;
+    border-radius: 3px;
+    border: 1px solid #666;
+    padding: 6px 14px;
+}
+#chatbox p:not(.chatbox_row_2:first-child) .msg {
+    display: block;
+    line-height: 1.5em;
+    margin-top: 2px!important;
+    border: 1px solid #666;
+    padding: 5px;
+    margin: initial;
+    margin-left: 21px;
+    border-radius: 3px;
+    background: #222;
+}
+#chatbox .cb_delete_msg, #chatbox .date-and-time {
+    float: right;
+    margin-top: 7px;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 10px;
+    font-family: monospace;
+    color: #aaa;
+}
+body.chatbox {
+    background-image: none;
+    background: #333
+}
