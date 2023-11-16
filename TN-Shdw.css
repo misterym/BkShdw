@@ -12,7 +12,28 @@
     gap: 5px;
     margin-top: 5px;
 }
-#tienda-items {
+div#tienda-items {
+    display: grid;
+    gap: 40px;
+}
+.seccion > span {
+    font-weight: 900;
+    background: var(--bckg);
+    display: block;
+    padding: 17px 20px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--accent);
+    text-align: center;
+    font-family: var(--fnt-title);
+    font-size: var(--fntsize-sub);
+    border-bottom: 4px solid var(--accent);
+}
+div#tienda-items > .seccion {
+    display: grid;
+    gap: 5px;
+}
+#tienda-items > .seccion > .contenido {
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
