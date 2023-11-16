@@ -38,18 +38,19 @@ div#tienda-items > .seccion {
     gap: 5px;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
 }
 .title-item {
-    font-size: var(--fntsize-sub);
-    font-family: var(--fnt-title);
+    font-size: calc(var(--fntsize-sub)*.9);
     font-weight: 900;
     color: var(--accent);
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:15px;
+    padding: 20px 20px;
+    line-height: 18px;
+    font-family: var(--fnt-title);
+    text-transform: uppercase;
 }
 div#carrito {
     border: var(--border-opacity);
@@ -119,6 +120,7 @@ div#carrito input[type="submit"] {
     letter-spacing: 1px;
 }
 .item {
+    min-height:340px;
     border: var(--border-opacity);
     background: var(--prin-bckg);
     padding: 10px;
@@ -274,4 +276,5 @@ div#items-carrito {
     letter-spacing: .5px;
     text-transform: uppercase;
     font-size: var(--fntsize-mini);
+    height:15px;
 }
