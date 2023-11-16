@@ -120,15 +120,17 @@ div#carrito input[type="submit"] {
     letter-spacing: 1px;
 }
 .item {
-    min-height:340px;
+    min-height: 340px;
     border: var(--border-opacity);
     background: var(--prin-bckg);
     padding: 10px;
-    display: grid;
+    display: flex;
     gap: 5px;
     min-width: 214px;
     flex-grow: 1;
     max-width: 214px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .titulo-carrito {
     margin: -10px -10px 0px;
