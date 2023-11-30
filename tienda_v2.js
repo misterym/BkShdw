@@ -279,11 +279,12 @@ function restaurarCupon(tipo,itm,max,noincluye){
       ticket.setAttribute('valor', descuento.valor);
       ticket.setAttribute('id', descuento.id);
       ticket.setAttribute('cantidad',1);
-      if(ticket.getAttribute('id') == 2 || ticket.getAttribute('id') == 3 || ticket.getAttribute('id') == 4){
+      if(ticket.getAttribute('id') == 2 || ticket.getAttribute('id') == 3){
         ticket.setAttribute('item',itm);
       }
-      if(,ticket.getAttribute('id') == 6){
-        ticket.setAttribute('item',descuento.item);
+
+      if(ticket.getAttribute('id') == 6 || ticket.getAttribute('id') == 4){
+        ticket.setAttribute('item', descuento.item);
       }
       if(ticket.getAttribute('id') == 5){
         ticket.setAttribute('noincluye',noincluye);
@@ -363,4 +364,4 @@ function ocultar(){
   } else {
       cajon.classList.add("oculto");
   }
-}
+}  
