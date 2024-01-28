@@ -256,7 +256,7 @@ function prepararItems(){
 function calcularTotal(cond){
   return carrito.reduce((total,item) =>{
     if(item.tipo == cond){
-      if(item.valor === 1){
+      if(item.valor == 1){
     		return (total + item.precio);
     	}else {
     		let c_descuento = item.valor * item.precio;
@@ -331,7 +331,7 @@ function imprimirItems(){
     const miNodo = document.createElement('div');
 
     let subtotal = 0;
-    if(item.valor === 1){
+    if(item.valor == 1){
     		subtotal =item.precio;
     	}else {
     		let c_descuento = item.valor * item.precio;
