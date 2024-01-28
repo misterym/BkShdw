@@ -259,9 +259,9 @@ function calcularTotal(cond){
       if(item.valor === 1){
     		return (total + item.precio);
     	}else {
-    		let descuento = item.valor * item.precio;
-    		if(descuento > 0){
-    			return (total + item.precio - (item.precio*item.valor));
+    		let c_descuento = item.valor * item.precio;
+    		if(c_descuento > 0){
+    			return (total + item.precio - c_descuento);
     		} else {
     			return (total);
     		}
@@ -334,9 +334,9 @@ function imprimirItems(){
     if(item.valor === 1){
     		subtotal =item.precio;
     	}else {
-    		let descuento = item.valor * item.precio;
-    		if(descuento > 0){
-    			subtotal = item.precio - (item.valor * item.precio);
+    		let c_descuento = item.valor * item.precio;
+    		if(c_descuento > 0){
+    			subtotal = item.precio - c_descuento;
     		} else {
     			subtotal = 0;
     		}
