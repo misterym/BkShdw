@@ -256,7 +256,6 @@ function prepararItems(){
 function calcularTotal(cond){
   return carrito.reduce((total,item) =>{
     if(item.tipo == cond){
-      console.log(item.valor);
       if(item.valor > 0) {
         return (total + item.precio - (item.precio*item.valor));
       } else {
