@@ -256,12 +256,16 @@ function prepararItems(){
 function calcularTotal(cond){
   return carrito.reduce((total,item) =>{
     if(item.tipo == cond){
-      if(item.valor > 0) {
-        return (total + item.precio - (item.precio*item.valor));
-      } else {
-       return (total);
-      }
-      
+      if(item.valor === 1){
+    		return (total + item.precio);
+    	}else {
+    		let descuento = item.valor * item.precio;
+    		if(descuento > 0){
+    			return (total + item.precio - (item.precio*item.valor));
+    		} else {
+    			return (total);
+    		}
+    	}
     }
     else {
       return total;
@@ -327,11 +331,16 @@ function imprimirItems(){
     const miNodo = document.createElement('div');
 
     let subtotal = 0;
-    if(item.valor > 0) {
-      subtotal = item.precio - (item.valor * item.precio);
-    } else {
-      subtotal = 0;
-    }
+    if(item.valor === 1){
+    		subtotal =item.precio;
+    	}else {
+    		let descuento = item.valor * item.precio;
+    		if(descuento > 0){
+    			subtotal = item.precio - (item.valor * item.precio);
+    		} else {
+    			subtotal = 0;
+    		}
+    	}
     miNodo.textContent = `${item.nombre} con ${item.descuento} - subtotal: ${subtotal}`;
 
     const botonRestar = document.createElement('button');
