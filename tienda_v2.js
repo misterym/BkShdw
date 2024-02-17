@@ -52,7 +52,6 @@ function mostrarCupones(evento){
   descuentos.forEach((descuento) => {
     switch(descuento.getAttribute('id')){
       case '1':
-        console.log('hola');
         if(parseInt(descuento.getAttribute('maximo')) >= parseInt(item.childNodes[4].textContent.split(" ")[0])){
           const boton = document.createElement('button');
           boton.textContent = `${descuento.getAttribute('name')}`;
@@ -87,9 +86,7 @@ function mostrarCupones(evento){
         }
       break;
       case '4':
-        console.log('Ticket pocion');
         if(item.childNodes[0].textContent.includes('mulpepper')){
-          console.log('aquitoy');
           const boton = document.createElement('button');
           boton.textContent = `${descuento.getAttribute('name')}`;
           boton.setAttribute('valor', descuento.getAttribute('valor'));
