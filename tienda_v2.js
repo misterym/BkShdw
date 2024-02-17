@@ -86,7 +86,7 @@ function mostrarCupones(evento){
         }
       break;
       case '4':
-        if(item.childNodes[2].textContent.includes(descuento.getAttribute('item'))){
+        if(item.childNodes[0].textContent.includes('mulpepper')){
           const boton = document.createElement('button');
           boton.textContent = `${descuento.getAttribute('name')}`;
           boton.setAttribute('valor', descuento.getAttribute('valor'));
