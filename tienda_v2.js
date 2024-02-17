@@ -86,14 +86,26 @@ function mostrarCupones(evento){
         }
       break;
       case '4':
-        if(item.childNodes[0].textContent.includes('mulpepper')){
-          const boton = document.createElement('button');
-          boton.textContent = `${descuento.getAttribute('name')}`;
-          boton.setAttribute('valor', descuento.getAttribute('valor'));
-          boton.setAttribute('lista', item.childNodes[2].textContent);
-          boton.setAttribute('name',descuento.getAttribute('name') );
-          boton.addEventListener('click', aplicarDescuento);
-          item.childNodes[6].append(boton);
+        if(descuento.getAttribute('name').includes('Poción')){
+          if(item.childNodes[0].textContent.includes('mulpepper')){
+              const boton = document.createElement('button');
+              boton.textContent = `${descuento.getAttribute('name')}`;
+              boton.setAttribute('valor', descuento.getAttribute('valor'));
+              boton.setAttribute('lista', item.childNodes[2].textContent);
+              boton.setAttribute('name',descuento.getAttribute('name') );
+              boton.addEventListener('click', aplicarDescuento);
+              item.childNodes[6].append(boton);
+          }
+        } else {
+          if(item.childNodes[2].textContent.includes(descuento.getAttribute('item'))){
+              const boton = document.createElement('button');
+              boton.textContent = `${descuento.getAttribute('name')}`;
+              boton.setAttribute('valor', descuento.getAttribute('valor'));
+              boton.setAttribute('lista', item.childNodes[2].textContent);
+              boton.setAttribute('name',descuento.getAttribute('name') );
+              boton.addEventListener('click', aplicarDescuento);
+              item.childNodes[6].append(boton);
+          }  
         }
       break;
       case '5':
